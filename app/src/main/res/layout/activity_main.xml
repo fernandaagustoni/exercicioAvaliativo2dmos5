@@ -8,31 +8,42 @@
     android:background="@color/pink"
     tools:context="view.MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android: android:layout_marginBottom="2dp"
+        android:layout_marginTop="16dp">
 
-    <EditText
-        android:id="@+id/edittext_debit"
+        <EditText
+        android:id="@+id/edittext_cardReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="8dp"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:hint="@string/cardReceive"
+        android:layout_weight="1"
+        android:backgroundTint="@color/darkPink"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+        <EditText
+        android:id="@+id/edittext_cardPay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:hint="@string/debitCard"
+        android:hint="@string/cardPay"
+        android:layout_weight="1"
         android:backgroundTint="@color/darkPink"
         android:layout_marginStart="10dp"
+        android:padding="8dp"
         android:layout_marginEnd="10dp" />
 
-    <EditText
-        android:id="@+id/edittext_credit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:inputType="numberDecimal"
-        android:textAlignment="center"
-        android:hint="@string/creditCard"
-        android:backgroundTint="@color/darkPink"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp" />
-
+    </LinearLayout>
     <EditText
         android:id="@+id/edittext_value"
         android:layout_width="match_parent"
@@ -49,37 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button_debit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/gray"
-            android:textColor="@color/darkPink"
-            android:text="@string/button_debit"/>
-        <Button
-            android:id="@+id/button_credit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/gray"
-            android:textColor="@color/darkPink"
-            android:layout_weight="1"
-            android:text="@string/button_credit"/>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -105,6 +87,24 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/button_transfer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/darkPink"
+        android:layout_weight="1"
+        android:text="@string/button_transfer"/>
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textview_value"
         android:layout_width="match_parent"
@@ -112,6 +112,6 @@
         android:layout_marginTop="40dp"
         android:textAlignment="center"
         android:textColor="@color/darkPink"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
 </LinearLayout>
