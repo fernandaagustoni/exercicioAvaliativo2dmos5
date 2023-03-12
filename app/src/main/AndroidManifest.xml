@@ -12,7 +12,7 @@
         android:theme="@style/Theme.SuperBancoImobiliarioDMO"
         tools:targetApi="31">
         <activity
-            android:name="view.MainActivity"
+            android:name="br.edu.ifsp.dmos5.view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

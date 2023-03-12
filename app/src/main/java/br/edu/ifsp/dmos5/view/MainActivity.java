@@ -1,4 +1,4 @@
-package view;
+package br.edu.ifsp.dmos5.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,8 +11,6 @@ import android.widget.Toast;
 
 import com.example.superbancoimobiliariodmo.R;
 
-import model.StarBank;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText inputEditTextReceive;
@@ -22,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button loanButton;
     private Button transferButton;
     private Button resetButton;
-
     private Button rowButton;
     private TextView outputTextView;
 
@@ -52,4 +49,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
 }
