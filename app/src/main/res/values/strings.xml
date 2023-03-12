@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SuperBancoImobiliarioDMO</string>
+    <string name="debitCard">Cartão(+)</string>
+    <string name="creditCard">Cartão(-)</string>
+    <string name="value">Valor</string>
+    <string name="button_credit">Crédito</string>
+    <string name="button_debit">Débito</string>
+    <string name="button_loan">Emprestimo</string>
+    <string name="button_pay">Pagamento</string>
+</resources>
