@@ -8,7 +8,6 @@ public class CreditCard {
     public CreditCard(){
         this.id = LAST_CARD_ID + 1;
         LAST_CARD_ID++;
-        this.setBalance(15000);
     }
 
     public int getId() {
@@ -36,5 +35,7 @@ public class CreditCard {
             throw new InsufficientMoney();
         }
     }
+
+
 
 }
