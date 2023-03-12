@@ -14,15 +14,15 @@ import com.example.superbancoimobiliariodmo.R;
 
 import model.StarBank;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private EditText inputEditTextCredit;
-    private EditText inputEditTextDebit;
+    private EditText inputEditTextReceive;
+    private EditText inputEditTextPay;
     private EditText inputEditTextValue;
-    private Button creditButton;
-    private Button debitButton;
     private Button payButton;
     private Button loanButton;
+    private Button transferButton;
+    private Button resetButton;
     private TextView outputTextView;
 
     @Override
@@ -30,17 +30,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        inputEditTextDebit = findViewById(R.id.edittext_debit);
-        inputEditTextCredit = findViewById(R.id.edittext_credit);
+        inputEditTextPay = findViewById(R.id.edittext_cardPay);
+        inputEditTextReceive = findViewById(R.id.edittext_cardReceive);
         inputEditTextValue = findViewById(R.id.edittext_value);
 
-        creditButton = findViewById(R.id.button_credit);
-        debitButton = findViewById(R.id.button_debit);
         loanButton = findViewById(R.id.button_loan);
         payButton = findViewById(R.id.button_pay);
+        transferButton = findViewById(R.id.button_transfer);
+        resetButton = findViewById(R.id.button_reset);
         outputTextView = findViewById(R.id.textview_value);
 
     }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.button_loan:
+                break;
+            case R.id.button_pay:
+                break;
+            case R.id.button_transfer:
+                break;
+            case R.id.button_reset:
+                break;
+        }
+
+    }
+
 
 
 

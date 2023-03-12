@@ -4,6 +4,7 @@
     <string name="cardPay">Cartão(-)</string>
     <string name="value">Valor</string>
     <string name="button_transfer">Transferencia</string>
-    <string name="button_loan">Emprestimo</string>
-    <string name="button_pay">Pagamento</string>
+    <string name="button_loan">Receber</string>
+    <string name="button_pay">Pagar</string>
+    <string name="button_reset">Reset</string>
 </resources>
