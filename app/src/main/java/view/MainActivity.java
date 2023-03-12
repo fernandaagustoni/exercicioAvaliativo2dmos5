@@ -1,6 +1,5 @@
 package view;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -23,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button loanButton;
     private Button transferButton;
     private Button resetButton;
+
+    private Button rowButton;
     private TextView outputTextView;
 
     @Override
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         transferButton = findViewById(R.id.button_transfer);
         resetButton = findViewById(R.id.button_reset);
         outputTextView = findViewById(R.id.textview_value);
+        rowButton = findViewById(R.id.button_row);
 
     }
 
@@ -47,17 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.button_loan:
                 break;
-            case R.id.button_pay:
-                break;
-            case R.id.button_transfer:
-                break;
-            case R.id.button_reset:
-                break;
         }
 
     }
-
-
-
-
 }
